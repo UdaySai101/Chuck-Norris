@@ -1,0 +1,222 @@
+*{
+    padding: 0%;
+    border: 0ch;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body{
+    background-color: rgb(233, 157, 16);
+}
+
+.main{
+    width: 100%;
+    padding-top: 20px; 
+    color: #9c2318;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align:  center;
+    font-size: 50px;
+    color: #9c2318;
+}
+
+a {
+    display: block;
+    width: 9.5vw;
+    height: 60px;
+    box-shadow: 0 0 3px 3px rgb(204, 204, 204);
+    background-color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin: 25px 10px;
+    line-height: 60px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 600;
+    transition-delay: 30ms; 
+}
+
+.catElements:hover{
+   background-color: #9c2318;
+   color: white;
+}
+.flexContainer{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.hidden{
+    display: none;
+}
+.arrow {
+    border: solid  #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-left: 7px;
+    padding: 3px;
+    top:-4%;
+    position: relative;
+    transition-delay: 50ms;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.catBtn{
+    width: 300px;
+    height: 48px;
+  cursor: pointer;
+  line-height: 48px;
+   margin: 30px auto;
+   margin-top: 50px;
+  color: white;
+  background-color: transparent;
+}
+.para{
+    text-align: center;
+    padding: 0px 10px;
+    font-weight: 600;
+    background-color: #9c2318;
+    display: inline-block;
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+.pjoke{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0px;
+    width: 90%;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.newJoke{
+    margin: 30px auto;
+    margin-bottom: 0px;
+    color: black;
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+
+.newJoke:active{
+    background-color: #9c2318;
+    color: white;
+}
+
+.selectedpar{
+    text-align: center;
+    margin: 25px 0px;
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1280px){
+    a{
+        height: 50px;
+        line-height: 50px;
+        margin: 18px 6px;
+    }
+    .selectedpar{
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    .pjoke{
+        font-size: 19px;
+       
+    }
+    h1{
+        font-size: 41px;
+    }
+}
+@media only screen and (max-width: 1020px){
+    a{
+        height: 45px;
+        line-height: 45px;
+        margin: 16px 5px;
+        font-size: 13.5px;
+    }
+    .selectedpar{
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+    .pjoke{
+        font-size: 17px;
+       
+    }
+    h1{
+        font-size: 38px;
+    }
+}
+@media only screen and (max-width: 744px) {
+    a{
+        width: 60px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 11px; 
+        margin: 12px 6px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .selectedpar{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .pjoke{
+        font-size: 15px;
+       
+    }
+    .catBtn{
+        width: 200px;
+        height: 38px;
+        line-height: 38px;
+    }
+    }
+@media only screen and (max-width: 480px) {
+    a{
+        height: 32px;
+        line-height: 32px;
+    }
+    .selectedpar{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .pjoke{
+        font-size: 13px;
+       
+    }
+    .arrow{
+        top: -1% ;
+    }
+}
